@@ -96,6 +96,10 @@ NekroAgent 插件：把 NA 已接入平台（OneBot v11 / SnowLuma 等）的消�
 只有文本以 `GSCORE_COMMAND_PREFIXES` 任一前缀开头（或 `HYBRID_BRIDGE_TOME` 开启时的 @机器人/私聊）
 才转发 core 并阻止 LLM；其余消息不转发、正常由 NA 大模型处理。适合不想让 core 干扰日常对话的场景。
 
+> 想要规则集中管理、支持正则匹配与频道白名单的"按前缀忽略"方案，
+> 可配合 [按前缀忽略消息](https://github.com/NTidal/nekro_llm_ignore_prefix) 插件使用：
+> 把本插件的 `GSCORE_COMMAND_PREFIXES` 同步到它的 `PREFIXES`，两者取其一即可。
+
 **LLM 运维工具**
 
 模型可自主调用两个工具（结果由 AI 向用户汇报）：
