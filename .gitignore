@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Windows 下载标记 / 编辑器 / 系统
+*Zone.Identifier
+.DS_Store
+.idea/
+.vscode/
